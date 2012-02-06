@@ -1,0 +1,40 @@
+body {
+    font: 14px sans-serif;
+}
+
+.instructions {
+    margin-bottom: 20px;
+}
+
+.delta-graph, .cumulative-graph {
+    font: 10px sans-serif;
+}
+
+.rule line {
+    stroke: #eee;
+    shape-rendering: crispEdges;
+}
+
+.rule line.axis {
+    stroke: #000;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+circle.line {
+    fill: #fff;
+}
+
+.wheel {
+    float: left;
+    margin-right: 20px;
+}
+.wheel-area {
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 400px;
+}
