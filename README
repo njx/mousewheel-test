@@ -1,0 +1,9 @@
+This test shows that the mousewheel events generated in WebKit for a
+"throw" trackpad gesture on Mac OS X are jittery (filed in Bugzilla as
+https://bugs.webkit.org/show_bug.cgi?id=81040). Do a quick two-finger swipe
+in the box on the left. You'll see that there's a lot of jitter in the
+individual events, even well after the fingers have left the trackpad. On top
+of the low-level jitter, there are larger-scale changes in slope that make
+the overall curvature non-smooth. This causes "jumpiness" in the events that
+makes things like virtualized scrolling look noticeably worse than native
+scrolling.
